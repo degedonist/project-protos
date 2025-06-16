@@ -8,6 +8,13 @@ message User {
   string email = 2;
 }
 
+message GetUserRequest {
+  string id = 1;
+}
+message GetUserResponse {
+  User user = 1;
+}
+
 // Запрос на создание
 message CreateUserRequest {
   string email    = 1;
