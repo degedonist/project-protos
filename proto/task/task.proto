@@ -29,7 +29,7 @@ message CreateTaskResponse {
 message UpdateTaskRequest {
   string id = 1;
   string title  = 2;
-  string isDone = 3;
+  bool isDone = 3;
 }
 message UpdateTaskResponse {
   Task task = 1;
